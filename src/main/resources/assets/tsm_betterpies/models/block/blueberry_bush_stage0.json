@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cross",
+    "textures": {
+      "cross": "tsm_betterpies:block/blueberry_bush_stage0"
+    }
+  }

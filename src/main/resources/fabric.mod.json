@@ -1,25 +1,25 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "tsm_betterpies",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "TallStickMan's Better Pies",
+	"description": "Why does pumpkin get all the glory!",
 	"authors": [
-		"Me!"
+		"TallStickMan"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://tallstickman.tv/",
+		"sources": "https://github.com/tallstickman/TallStickMansBetterPies"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"license": "MIT",
+	"icon": "assets/tsm_betterpies/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"tv.tallstickman.betterpies.TallStickMansBetterPies"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"tv.tallstickman.betterpies.TallStickMansBetterPiesClient"
 		]
 	},
 	"mixins": [
