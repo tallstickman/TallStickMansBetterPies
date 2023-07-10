@@ -11,5 +11,6 @@ public class TallStickMansBetterPiesClient implements ClientModInitializer {
 	public void onInitializeClient() {
 		// Make it so the transparency in the texture is rendered as clear, not black.
 		BlockRenderLayerMap.INSTANCE.putBlock(Fruits.BLUEBERRY_BUSH_BLOCK, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(Fruits.BLACKBERRY_BUSH_BLOCK, RenderLayer.getCutout());
 	}
 }

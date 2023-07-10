@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "BBB",
+      "BBB",
+      "BBB"
+    ],
+    "key": {
+     "B": {
+        "item": "tsm_betterpies:blueberries"
+      }
+    },
+    "result": {
+      "item": "minecraft:blue_dye",
+      "count": 1
+    }
+  }

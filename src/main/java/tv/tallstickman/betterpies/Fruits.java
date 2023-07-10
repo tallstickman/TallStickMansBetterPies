@@ -14,7 +14,14 @@ import net.minecraft.util.Identifier;
 
 public class Fruits {
     
+    // Blackberries for blackberry pie.
+	//   This block is initialized in the main mod initializer so that its declaration here can be referenced by the related item here.
+	public static final Block BLACKBERRY_BUSH_BLOCK = new BlackberryBushBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).ticksRandomly().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH).pistonBehavior(PistonBehavior.DESTROY).nonOpaque());
+	public static final FoodComponent BLACKBERRIES_FOOD_COMPONENT = (new FoodComponent.Builder()).hunger(2).saturationModifier(0.1F).build();
+	public static final Item BLACKBERRIES_ITEM = Registry.register(Registries.ITEM, new Identifier(Constants.MODID_STRING, Constants.ITEM_BLACKBERRIES_STRING), new BlockItem(BLACKBERRY_BUSH_BLOCK, new Item.Settings().food(BLACKBERRIES_FOOD_COMPONENT)));
+
     // Blueberries for blueberry pie.
+	//   This block is initialized in the main mod initializer so that its declaration here can be referenced by the related item here.
 	public static final Block BLUEBERRY_BUSH_BLOCK = new BlueberryBushBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).ticksRandomly().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH).pistonBehavior(PistonBehavior.DESTROY).nonOpaque());
 	public static final FoodComponent BLUEBERRIES_FOOD_COMPONENT = (new FoodComponent.Builder()).hunger(2).saturationModifier(0.1F).build();
 	public static final Item BLUEBERRIES_ITEM = Registry.register(Registries.ITEM, new Identifier(Constants.MODID_STRING, Constants.ITEM_BLUEBERRIES_STRING), new BlockItem(BLUEBERRY_BUSH_BLOCK, new Item.Settings().food(BLUEBERRIES_FOOD_COMPONENT)));

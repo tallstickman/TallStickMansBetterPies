@@ -22,25 +22,10 @@ public class TallStickMansBetterPies implements ModInitializer {
 	
 	// %%% MOD ITEMS %%% //
 
-	// Activate the static members of the Fruits class.
+	// Activate the static members of the various classes of foods.
 	public static final Fruits FRUITS = new Fruits();
-
-	// Apple Pie!
-	public static final FoodComponent APPLE_PIE_FOOD_COMPONENT = (new FoodComponent.Builder()).hunger(8).saturationModifier(0.3F).build();
-	public static final Item APPLE_PIE_ITEM = Registry.register(Registries.ITEM, new Identifier(Constants.MODID_STRING, Constants.ITEM_APPLE_PIE_STRING), new Item(new Item.Settings().food(APPLE_PIE_FOOD_COMPONENT)));
-
-	// Berry Pie!
-	public static final FoodComponent BERRY_PIE_FOOD_COMPONENT = (new FoodComponent.Builder()).hunger(8).saturationModifier(0.3F).build();
-	public static final Item BERRY_PIE_ITEM = Registry.register(Registries.ITEM, new Identifier(Constants.MODID_STRING, Constants.ITEM_BERRY_PIE_STRING), new Item(new Item.Settings().food(BERRY_PIE_FOOD_COMPONENT)));
-
-	// Cherry Pie!
-	public static final FoodComponent CHERRY_PIE_FOOD_COMPONENT = (new FoodComponent.Builder()).hunger(8).saturationModifier(0.3F).build();
-	public static final Item CHERRY_PIE_ITEM = Registry.register(Registries.ITEM, new Identifier(Constants.MODID_STRING, Constants.ITEM_CHERRY_PIE_STRING), new Item(new Item.Settings().food(CHERRY_PIE_FOOD_COMPONENT)));
-
-	// Mud Pie!
-	public static final FoodComponent MUD_PIE_FOOD_COMPONENT = (new FoodComponent.Builder()).hunger(8).saturationModifier(0.3F).build();
-	public static final Item MUD_PIE_ITEM = Registry.register(Registries.ITEM, new Identifier(Constants.MODID_STRING, Constants.ITEM_MUD_PIE_STRING), new Item(new Item.Settings().food(MUD_PIE_FOOD_COMPONENT)));
-
+	public static final Pies PIES = new Pies();
+	
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
@@ -69,6 +54,7 @@ public class TallStickMansBetterPies implements ModInitializer {
         });
 
 		Registry.register(Registries.BLOCK, new Identifier(Constants.MODID_STRING, Constants.BLOCK_BLUEBERRY_BUSH_STRING), Fruits.BLUEBERRY_BUSH_BLOCK);
+		Registry.register(Registries.BLOCK, new Identifier(Constants.MODID_STRING, Constants.BLOCK_BLACKBERRY_BUSH_STRING), Fruits.BLACKBERRY_BUSH_BLOCK);
 
 	}
 }
