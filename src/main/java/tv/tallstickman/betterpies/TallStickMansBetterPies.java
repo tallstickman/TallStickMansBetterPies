@@ -64,13 +64,15 @@ public class TallStickMansBetterPies implements ModInitializer {
 			content.add(Fruits.BLACKBERRIES_ITEM);
 			content.add(Fruits.BLUEBERRIES_ITEM);
 			content.add(Fruits.CHERRIES_ITEM);
-
+			// Pies
 			content.add(Pies.APPLE_PIE_ITEM);
 			content.add(Pies.BLACKBERRY_PIE_ITEM);
 			content.add(Pies.BLUEBERRY_PIE_ITEM);
 			content.add(Pies.CHERRY_PIE_ITEM);
 			content.add(Pies.MUD_PIE_ITEM);
 			content.add(Pies.BERRY_PIE_ITEM);	// These are "Sweet Berry Pies," so we place them alphabetically after "Mud Pies."
+			// Other Foods
+			content.add(OtherFoods.CHEESE_ITEM);
 		});
 	}
 }
