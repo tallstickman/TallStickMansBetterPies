@@ -3,8 +3,6 @@ package tv.tallstickman.betterpies;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.block.Blocks;
-import net.minecraft.item.FoodComponent;
-import net.minecraft.item.Item;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
@@ -25,7 +23,7 @@ public class TallStickMansBetterPies implements ModInitializer {
 	// Activate the static members of the various classes of foods.
 	public static final Fruits FRUITS = new Fruits();
 	public static final Pies PIES = new Pies();
-	
+
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
