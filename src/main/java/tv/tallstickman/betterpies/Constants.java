@@ -18,6 +18,7 @@ public class Constants {
     public static final String ITEM_CHERRY_PIE_STRING     = "cherry_pie";
     public static final String ITEM_MUD_PIE_STRING        = "mud_pie";
     //   Other Food Names
+    public static final String ITEM_CHEESE_STRING = "cheese";
     // Block Names
     public static final String BLOCK_BLUEBERRY_BUSH_STRING  = "blueberry_bush";
     public static final String BLOCK_BLACKBERRY_BUSH_STRING = "blackberry_bush";

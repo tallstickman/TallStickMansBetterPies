@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "minecraft:milk_bucket"
+    },
+    "result": "tsm_betterpies:cheese",
+    "experience": 0.35
+}

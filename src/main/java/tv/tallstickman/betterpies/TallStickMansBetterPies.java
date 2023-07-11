@@ -1,8 +1,10 @@
 package tv.tallstickman.betterpies;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
@@ -21,8 +23,9 @@ public class TallStickMansBetterPies implements ModInitializer {
 	// %%% MOD ITEMS %%% //
 
 	// Activate the static members of the various classes of foods.
-	public static final Fruits FRUITS = new Fruits();
-	public static final Pies PIES = new Pies();
+	public static final Fruits FRUITS          = new Fruits();
+	public static final Pies PIES              = new Pies();
+	public static final OtherFoods OTHER_FOODS = new OtherFoods();
 
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
@@ -51,8 +54,23 @@ public class TallStickMansBetterPies implements ModInitializer {
             }
         });
 
+		// Register new berry bush blocks.
 		Registry.register(Registries.BLOCK, new Identifier(Constants.MODID_STRING, Constants.BLOCK_BLUEBERRY_BUSH_STRING), Fruits.BLUEBERRY_BUSH_BLOCK);
 		Registry.register(Registries.BLOCK, new Identifier(Constants.MODID_STRING, Constants.BLOCK_BLACKBERRY_BUSH_STRING), Fruits.BLACKBERRY_BUSH_BLOCK);
 
+		// Add food items to the "Food and Drink" Item Group
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(content -> {
+			// Fruits
+			content.add(Fruits.BLACKBERRIES_ITEM);
+			content.add(Fruits.BLUEBERRIES_ITEM);
+			content.add(Fruits.CHERRIES_ITEM);
+
+			content.add(Pies.APPLE_PIE_ITEM);
+			content.add(Pies.BLACKBERRY_PIE_ITEM);
+			content.add(Pies.BLUEBERRY_PIE_ITEM);
+			content.add(Pies.CHERRY_PIE_ITEM);
+			content.add(Pies.MUD_PIE_ITEM);
+			content.add(Pies.BERRY_PIE_ITEM);	// These are "Sweet Berry Pies," so we place them alphabetically after "Mud Pies."
+		});
 	}
 }
