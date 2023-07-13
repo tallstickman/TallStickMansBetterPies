@@ -24,6 +24,7 @@ public class Constants {
     public static final String BLOCK_BLUEBERRY_BUSH_STRING  = "blueberry_bush";
     public static final String BLOCK_BLACKBERRY_BUSH_STRING = "blackberry_bush";
     // World Gen Placed Feature Names
+    public static final String PLACED_FEATURE_BLACKBERRY_BUSH_PATCH_STRING = "blackberry_bush_patch";
     public static final String PLACED_FEATURE_BLUEBERRY_BUSH_PATCH_STRING = "blueberry_bush_patch";
 
 }
