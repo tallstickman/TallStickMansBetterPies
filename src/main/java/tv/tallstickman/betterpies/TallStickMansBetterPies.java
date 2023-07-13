@@ -82,6 +82,17 @@ public class TallStickMansBetterPies implements ModInitializer {
 			GenerationStep.Feature.VEGETAL_DECORATION,
 			RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(Constants.MODID_STRING, Constants.PLACED_FEATURE_BLUEBERRY_BUSH_PATCH_STRING))
 		);
+		final List<RegistryKey<Biome>> BLACKBERRY_BIOMES = List.of(
+			BiomeKeys.SAVANNA,
+			BiomeKeys.SAVANNA_PLATEAU,
+			BiomeKeys.WINDSWEPT_SAVANNA,
+			BiomeKeys.WOODED_BADLANDS
+		);
+         BiomeModifications.addFeature(
+			BiomeSelectors.includeByKey(BLACKBERRY_BIOMES),
+			GenerationStep.Feature.VEGETAL_DECORATION,
+			RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(Constants.MODID_STRING, Constants.PLACED_FEATURE_BLACKBERRY_BUSH_PATCH_STRING))
+		);
         // BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WINDSWEPT_GRAVELLY_HILLS),
 		// 	GenerationStep.Feature.VEGETAL_DECORATION,
 		// 	RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(Constants.MODID_STRING, "blueberry_bush_patch")));
