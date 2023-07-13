@@ -2,7 +2,8 @@ package tv.tallstickman.betterpies;
 
 /// Contains constants used throughout the project to allow better consistency, and organizes them all into a single location.
 public class Constants {
-	// The modid for use elsewhere in the code.
+	
+    // The modid for use elsewhere in the code.
 	public static final String MODID_STRING = "tsm_betterpies";
 
     // Item Names
@@ -22,5 +23,7 @@ public class Constants {
     // Block Names
     public static final String BLOCK_BLUEBERRY_BUSH_STRING  = "blueberry_bush";
     public static final String BLOCK_BLACKBERRY_BUSH_STRING = "blackberry_bush";
+    // World Gen Placed Feature Names
+    public static final String PLACED_FEATURE_BLUEBERRY_BUSH_PATCH_STRING = "blueberry_bush_patch";
 
 }

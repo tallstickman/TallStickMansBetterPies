@@ -1,6 +1,8 @@
 package tv.tallstickman.betterpies;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.block.Blocks;
@@ -11,7 +13,14 @@ import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.BiomeKeys;
+import net.minecraft.world.gen.GenerationStep;
+
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -57,7 +66,25 @@ public class TallStickMansBetterPies implements ModInitializer {
 		// Register new berry bush blocks.
 		Registry.register(Registries.BLOCK, new Identifier(Constants.MODID_STRING, Constants.BLOCK_BLUEBERRY_BUSH_STRING), Fruits.BLUEBERRY_BUSH_BLOCK);
 		Registry.register(Registries.BLOCK, new Identifier(Constants.MODID_STRING, Constants.BLOCK_BLACKBERRY_BUSH_STRING), Fruits.BLACKBERRY_BUSH_BLOCK);
-
+		// Create and register berry patch terrain Features
+		final List<RegistryKey<Biome>> BLUEBERRY_BIOMES = List.of(
+			BiomeKeys.WINDSWEPT_GRAVELLY_HILLS,
+			BiomeKeys.WINDSWEPT_HILLS,
+			BiomeKeys.WINDSWEPT_FOREST,
+			BiomeKeys.SNOWY_TAIGA,
+			BiomeKeys.SNOWY_SLOPES,
+			BiomeKeys.TAIGA,
+			BiomeKeys.OLD_GROWTH_PINE_TAIGA,
+			BiomeKeys.OLD_GROWTH_SPRUCE_TAIGA
+		);
+        BiomeModifications.addFeature(
+			BiomeSelectors.includeByKey(BLUEBERRY_BIOMES),
+			GenerationStep.Feature.VEGETAL_DECORATION,
+			RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(Constants.MODID_STRING, Constants.PLACED_FEATURE_BLUEBERRY_BUSH_PATCH_STRING))
+		);
+        // BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WINDSWEPT_GRAVELLY_HILLS),
+		// 	GenerationStep.Feature.VEGETAL_DECORATION,
+		// 	RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(Constants.MODID_STRING, "blueberry_bush_patch")));
 		// Add food items to the "Food and Drink" Item Group
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(content -> {
 			// Fruits
