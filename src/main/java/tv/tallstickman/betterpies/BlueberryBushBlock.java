@@ -2,6 +2,7 @@ package tv.tallstickman.betterpies;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -29,6 +30,12 @@ extends SweetBerryBushBlock
 
     }
     
+    @Override
+    protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
+        // Enables placing these bushes on gravel.  IRL they grow in tough biomes.
+        return floor.isOf(Blocks.GRAVEL) || super.canPlantOnTop(floor, world, pos);
+    }
+
     @Override
     public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
         return new ItemStack(Fruits.BLUEBERRIES_ITEM);
