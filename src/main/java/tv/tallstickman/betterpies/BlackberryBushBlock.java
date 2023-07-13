@@ -36,7 +36,6 @@ extends SweetBerryBushBlock
 
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-        TallStickMansBetterPies.LOGGER.info("Hello world!");
         if (!(entity instanceof LivingEntity) || entity.getType() == EntityType.FOX || entity.getType() == EntityType.BEE) {
             return;
         }
