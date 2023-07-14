@@ -1,5 +1,7 @@
 package tv.tallstickman.betterpies;
 
+import java.util.List;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SweetBerryBushBlock;
@@ -34,9 +36,19 @@ extends SweetBerryBushBlock
         return new ItemStack(Fruits.BLACKBERRIES_ITEM);
     }
 
+    // If we don't give these natural spawns immunity it's a horror show.
+    private static final List<EntityType<?>> IMMUNE_ENTITY_TYPES = List.of(
+        EntityType.BEE,
+        EntityType.FOX,
+        EntityType.CHICKEN,
+        EntityType.COW,
+        EntityType.LLAMA,
+        EntityType.PIG,
+        EntityType.SHEEP
+    );
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-        if (!(entity instanceof LivingEntity) || entity.getType() == EntityType.FOX || entity.getType() == EntityType.BEE) {
+        if (!(entity instanceof LivingEntity) || IMMUNE_ENTITY_TYPES.contains(entity.getType())) {
             return;
         }
         entity.slowMovement(state, new Vec3d(0.8f, 0.75, 0.8f));
