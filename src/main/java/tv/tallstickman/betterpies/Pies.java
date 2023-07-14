@@ -1,7 +1,9 @@
 package tv.tallstickman.betterpies;
 
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -32,4 +34,20 @@ public class Pies {
 	public static final FoodComponent MUD_PIE_FOOD_COMPONENT = (new FoodComponent.Builder()).hunger(8).saturationModifier(0.3F).build();
 	public static final Item MUD_PIE_ITEM = Registry.register(Registries.ITEM, new Identifier(Constants.MODID_STRING, Constants.ITEM_MUD_PIE_STRING), new Item(new Item.Settings().food(MUD_PIE_FOOD_COMPONENT)));
 
+	// Cheesecake!
+	public static final FoodComponent CHEESECAKE_FOOD_COMPONENT = (new FoodComponent.Builder()).hunger(8).saturationModifier(0.3F).build();
+	public static final Item CHEESECAKE_ITEM = Registry.register(Registries.ITEM, new Identifier(Constants.MODID_STRING, Constants.ITEM_CHEESECAKE_STRING), new Item(new Item.Settings().food(CHEESECAKE_FOOD_COMPONENT)));
+
+	public static void initialize()
+	{
+		// Add food items to the "Food and Drink" Item Group
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(content -> {
+			content.add(Pies.APPLE_PIE_ITEM);
+			content.add(Pies.BLACKBERRY_PIE_ITEM);
+			content.add(Pies.BLUEBERRY_PIE_ITEM);
+			content.add(Pies.CHERRY_PIE_ITEM);
+			content.add(Pies.MUD_PIE_ITEM);
+			content.add(Pies.BERRY_PIE_ITEM);	// These are "Sweet Berry Pies," so we place them alphabetically after "Mud Pies."
+		});
+	}
 }
