@@ -1,16 +1,101 @@
 {
-  "feature": "tsm_betterpies:blackberry_bush_patch",
+  "feature": {
+    "type": "minecraft:random_patch",
+    "config": {
+      "tries": 1,
+      "xz_spread": 0,
+      "y_spread": 0,
+      "feature": {
+        "feature": {
+          "type": "minecraft:random_patch",
+          "config": {
+            "tries": 1,
+            "xz_spread": 0,
+            "y_spread": 0,
+            "feature": {
+              "feature": {
+                "type": "minecraft:simple_block",
+                "config": {
+                  "to_place": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "tsm_betterpies:blackberry_bush",
+                      "Properties": {
+                        "age": "3"
+                      }
+                    }
+                  }
+                }
+              },
+              "placement": [
+                {
+                  "type": "minecraft:count",
+                  "count": 16
+                },
+                {
+                  "type": "minecraft:random_offset",
+                  "xz_spread": {
+                    "type": "minecraft:uniform",
+                    "value": {
+                      "min_inclusive": 7,
+                      "max_inclusive": 9
+                    }
+                  },
+                  "y_spread": 0
+                },
+                {
+                  "type": "minecraft:heightmap",
+                  "heightmap": "WORLD_SURFACE_WG"
+                }
+              ]
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:count",
+            "count": 12
+          },
+          {
+            "type": "minecraft:random_offset",
+            "xz_spread": {
+              "type": "minecraft:uniform",
+              "value": {
+                "min_inclusive": 4,
+                "max_inclusive": 12
+              }
+            },
+            "y_spread": 0
+          },
+          {
+            "type": "minecraft:heightmap",
+            "heightmap": "WORLD_SURFACE_WG"
+          }
+        ]
+      }
+    }
+  },
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 1
+      "count": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 1,
+          "max_inclusive": 4
+        }
+      }
     },
     {
       "type": "minecraft:in_square"
     },
     {
       "type": "minecraft:heightmap",
-      "heightmap": "MOTION_BLOCKING_NO_LEAVES"
+      "heightmap": "WORLD_SURFACE_WG"
+    },
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 32
     }
   ]
 }
