@@ -36,7 +36,11 @@ public class Pies {
 
 	// Cheesecake!
 	public static final FoodComponent CHEESECAKE_FOOD_COMPONENT = (new FoodComponent.Builder()).hunger(8).saturationModifier(0.3F).build();
-	public static final Item CHEESECAKE_ITEM = Registry.register(Registries.ITEM, new Identifier(Constants.MODID_STRING, Constants.ITEM_CHEESECAKE_STRING), new Item(new Item.Settings().food(CHEESECAKE_FOOD_COMPONENT)));
+	public static final Item CHEESECAKE_ITEM = Registry.register(
+		Registries.ITEM,
+		new Identifier(Constants.MODID_STRING, Constants.ITEM_CHEESECAKE_STRING),
+		new CheesecakeItem(new Item.Settings().maxCount(1).food(CHEESECAKE_FOOD_COMPONENT))
+	);
 
 	public static void initialize()
 	{
@@ -45,6 +49,7 @@ public class Pies {
 			content.add(Pies.APPLE_PIE_ITEM);
 			content.add(Pies.BLACKBERRY_PIE_ITEM);
 			content.add(Pies.BLUEBERRY_PIE_ITEM);
+			content.add(Pies.CHEESECAKE_ITEM);
 			content.add(Pies.CHERRY_PIE_ITEM);
 			content.add(Pies.MUD_PIE_ITEM);
 			content.add(Pies.BERRY_PIE_ITEM);	// These are "Sweet Berry Pies," so we place them alphabetically after "Mud Pies."

@@ -7,10 +7,6 @@ import org.slf4j.LoggerFactory;
 
 public class TallStickMansBetterPies implements ModInitializer {
 
-	// %%% MOD BLOCKS %%% //
-	
-	// %%% MOD ITEMS %%% //
-
 	// Activate the static members of the various classes of foods.
 	public static final Fruits FRUITS          = new Fruits();
 	public static final Pies PIES              = new Pies();
@@ -27,10 +23,12 @@ public class TallStickMansBetterPies implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.s
 		// Proceed with mild caution.
 
-		LOGGER.info("Baking up better pies.");
 
+		LOGGER.info("Growing new fruits...");
 		Fruits.initialize();
+		LOGGER.info("Baking up better pies...");
 		Pies.initialize();
+		LOGGER.info("Acquiring other new foods...");
 		OtherFoods.initialize();
 
 	}

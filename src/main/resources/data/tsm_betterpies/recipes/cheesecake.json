@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        { "item": "tsm_betterpies:cheese" },
+        { "item": "minecraft:sugar" },
+        { "item": "minecraft:egg" }
+    ],
+    "result": {
+        "item": "tsm_betterpies:cheesecake",
+        "count": 1
+    }
+}
