@@ -7,10 +7,10 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.world.World;
 
-public class CheeseItem
+public class DairyItem
 extends Item{
 
-    public CheeseItem(Settings settings) {
+    public DairyItem(Settings settings) {
         super(settings);
     }
     
