@@ -39,7 +39,7 @@ public class Pies {
 	public static final Item CHEESECAKE_ITEM = Registry.register(
 		Registries.ITEM,
 		new Identifier(Constants.MODID_STRING, Constants.ITEM_CHEESECAKE_STRING),
-		new CheesecakeItem(new Item.Settings().maxCount(1).food(CHEESECAKE_FOOD_COMPONENT))
+		new DairyItem(new Item.Settings().maxCount(1).food(CHEESECAKE_FOOD_COMPONENT))
 	);
 
 	public static void initialize()

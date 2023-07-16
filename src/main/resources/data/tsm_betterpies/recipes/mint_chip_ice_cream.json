@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        { "item": "minecraft:ice" },
+        { "item": "minecraft:sugar" },
+        { "item": "minecraft:milk_bucket" },
+        { "item": "minecraft:egg" },
+        { "item": "minecraft:green_dye"},
+        { "item": "minecraft:cocoa_beans"}
+    ],
+    "result": {
+        "item": "tsm_betterpies:mint_chip_ice_cream",
+        "count": 1
+    }
+}

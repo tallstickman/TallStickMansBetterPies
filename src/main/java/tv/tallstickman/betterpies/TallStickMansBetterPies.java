@@ -11,6 +11,7 @@ public class TallStickMansBetterPies implements ModInitializer {
 	public static final Fruits FRUITS          = new Fruits();
 	public static final Pies PIES              = new Pies();
 	public static final OtherFoods OTHER_FOODS = new OtherFoods();
+	public static final IceCream ICE_CREAM     = new IceCream();
 
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
@@ -30,6 +31,7 @@ public class TallStickMansBetterPies implements ModInitializer {
 		Pies.initialize();
 		LOGGER.info("Acquiring other new foods...");
 		OtherFoods.initialize();
-
+		LOGGER.info("Churning up ice cream...");
+		IceCream.initialize();
 	}
 }
