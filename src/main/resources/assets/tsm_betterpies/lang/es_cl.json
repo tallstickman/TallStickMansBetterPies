@@ -1,0 +1,19 @@
+{
+    "block.tsm_betterpies.blackberry_bush"            : "Moras",
+    "block.tsm_betterpies.blueberry_bush"             : "Arándanos",
+    "item.tsm_betterpies.cherries"                    : "Cerezas",
+    "item.tsm_betterpies.apple_pie"                   : "Tarta de Manzana",
+    "item.tsm_betterpies.blackberry_pie"              : "Pastel de Moras",
+    "item.tsm_betterpies.blueberry_pie"               : "Tarta de Arándanos",
+    "item.tsm_betterpies.cheese"                      : "Queso",
+    "item.tsm_betterpies.cheesecake"                  : "Pastel de Queso",
+    "item.tsm_betterpies.cherry_pie"                  : "Tarta de Cerezas",
+    "item.tsm_betterpies.mud_pie"                     : "Pastel de Barro",
+    "item.tsm_betterpies.berry_pie"                   : "Pastel de Bayas Dulces",
+    "item.tsm_betterpies.berry_ice_cream"             : "Helado de Bayas",
+    "item.tsm_betterpies.chocolate_ice_cream"         : "Helado de Chocolate",
+    "item.tsm_betterpies.cookies_and_cream_ice_cream" : "Helado de Galletas y Crema ",
+    "item.tsm_betterpies.mint_chip_ice_cream"         : "Helado de Menta Con Chispas de Chocolate",
+    "item.tsm_betterpies.neapolitan_ice_cream"        : "Helado Napolitano",
+    "item.tsm_betterpies.vanilla_ice_cream"           : "Helado de Vainilla"
+}
