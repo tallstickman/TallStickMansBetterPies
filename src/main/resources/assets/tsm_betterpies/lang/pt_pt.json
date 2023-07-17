@@ -1,0 +1,19 @@
+{
+    "block.tsm_betterpies.blackberry_bush"            : "Amoras",
+    "block.tsm_betterpies.blueberry_bush"             : "Mirtilos",
+    "item.tsm_betterpies.cherries"                    : "Cerejas",
+    "item.tsm_betterpies.apple_pie"                   : "Torta de Maçã",
+    "item.tsm_betterpies.blackberry_pie"              : "Torta de Amora",
+    "item.tsm_betterpies.blueberry_pie"               : "Torta de Mirtilo",
+    "item.tsm_betterpies.cheese"                      : "Queijo",
+    "item.tsm_betterpies.cheesecake"                  : "Cheesecake",
+    "item.tsm_betterpies.cherry_pie"                  : "Torta de Cereja",
+    "item.tsm_betterpies.mud_pie"                     : "Torta de Lama",
+    "item.tsm_betterpies.berry_pie"                   : "Torta de Bagas Doces",
+    "item.tsm_betterpies.berry_ice_cream"             : "Sorvete de Bagas",
+    "item.tsm_betterpies.chocolate_ice_cream"         : "Sorvete de Chocolate",
+    "item.tsm_betterpies.cookies_and_cream_ice_cream" : "Biscoitos e Sorvetes de Creme",
+    "item.tsm_betterpies.mint_chip_ice_cream"         : "Sorvete de Menta e Lascas de Chocolate ",
+    "item.tsm_betterpies.neapolitan_ice_cream"        : "Sorvete Napolitano",
+    "item.tsm_betterpies.vanilla_ice_cream"           : "Sorvete de Baunilha"
+}

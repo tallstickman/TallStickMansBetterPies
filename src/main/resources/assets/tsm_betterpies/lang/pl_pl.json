@@ -1,0 +1,19 @@
+{
+    "block.tsm_betterpies.blackberry_bush"            : "Jeżyny",
+    "block.tsm_betterpies.blueberry_bush"             : "Jagody",
+    "item.tsm_betterpies.cherries"                    : "Wiśnie",
+    "item.tsm_betterpies.apple_pie"                   : "Jabłecznik",
+    "item.tsm_betterpies.blackberry_pie"              : "Ciasto Jeżynowe",
+    "item.tsm_betterpies.blueberry_pie"               : "Ciasto Jagodowe",
+    "item.tsm_betterpies.cheese"                      : "Ser",
+    "item.tsm_betterpies.cheesecake"                  : "Sernik",
+    "item.tsm_betterpies.cherry_pie"                  : "Ciasto Wiśniowe",
+    "item.tsm_betterpies.mud_pie"                     : "Ciasto Błotne",
+    "item.tsm_betterpies.berry_pie"                   : "Słodkie Ciasto Jagodowe",
+    "item.tsm_betterpies.berry_ice_cream"             : "Lody Jagodowe",
+    "item.tsm_betterpies.chocolate_ice_cream"         : "Lody Czekoladowe",
+    "item.tsm_betterpies.cookies_and_cream_ice_cream" : "Ciasteczka i Lody Śmietankowe",
+    "item.tsm_betterpies.mint_chip_ice_cream"         : "Miętowe Lody z Kawałkami Czekolady",
+    "item.tsm_betterpies.neapolitan_ice_cream"        : "Lody Neapolitańskie",
+    "item.tsm_betterpies.vanilla_ice_cream"           : "Lody Waniliowe"
+}

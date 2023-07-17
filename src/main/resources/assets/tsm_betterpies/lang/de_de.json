@@ -1,0 +1,19 @@
+{
+    "block.tsm_betterpies.blackberry_bush"            : "Brombeeren",
+    "block.tsm_betterpies.blueberry_bush"             : "Heidelbeeren",
+    "item.tsm_betterpies.cherries"                    : "Kirschen",
+    "item.tsm_betterpies.apple_pie"                   : "Apfelkuchen",
+    "item.tsm_betterpies.blackberry_pie"              : "Brombeerkuchen",
+    "item.tsm_betterpies.blueberry_pie"               : "Blaubeerkuchen",
+    "item.tsm_betterpies.cheese"                      : "Käse",
+    "item.tsm_betterpies.cheesecake"                  : "Käsekuchen",
+    "item.tsm_betterpies.cherry_pie"                  : "Kirschkuchen",
+    "item.tsm_betterpies.mud_pie"                     : "Schlammkuchen",
+    "item.tsm_betterpies.berry_pie"                   : "Süßer Beerenkuchen",
+    "item.tsm_betterpies.berry_ice_cream"             : "Beeren-Eis",
+    "item.tsm_betterpies.chocolate_ice_cream"         : "Schokoladen-Eis",
+    "item.tsm_betterpies.cookies_and_cream_ice_cream" : "Kekse und Sahne-Eis",
+    "item.tsm_betterpies.mint_chip_ice_cream"         : "Minz-Schokoladenstückchen-Eis",
+    "item.tsm_betterpies.neapolitan_ice_cream"        : "Neapolitanisches Eis",
+    "item.tsm_betterpies.vanilla_ice_cream"           : "Vanilleeis"
+}

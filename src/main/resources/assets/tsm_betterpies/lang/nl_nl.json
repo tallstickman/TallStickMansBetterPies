@@ -1,0 +1,19 @@
+{
+    "block.tsm_betterpies.blackberry_bush"            : "Bramen",
+    "block.tsm_betterpies.blueberry_bush"             : "Bosbessen",
+    "item.tsm_betterpies.cherries"                    : "Kersen",
+    "item.tsm_betterpies.apple_pie"                   : "Appeltaart",
+    "item.tsm_betterpies.blackberry_pie"              : "Bramentaart",
+    "item.tsm_betterpies.blueberry_pie"               : "Bosbessentaart",
+    "item.tsm_betterpies.cheese"                      : "Kaas",
+    "item.tsm_betterpies.cheesecake"                  : "Kwarktaart",
+    "item.tsm_betterpies.cherry_pie"                  : "Kersentaart",
+    "item.tsm_betterpies.mud_pie"                     : "Moddertaart",
+    "item.tsm_betterpies.berry_pie"                   : "Zoete Bessentaart",
+    "item.tsm_betterpies.berry_ice_cream"             : "Bessenijs",
+    "item.tsm_betterpies.chocolate_ice_cream"         : "Chocolade Ijs",
+    "item.tsm_betterpies.cookies_and_cream_ice_cream" : "Koekjes en Roomijs",
+    "item.tsm_betterpies.mint_chip_ice_cream"         : "Munt Chocolade Ijs",
+    "item.tsm_betterpies.neapolitan_ice_cream"        : "Napolitaans Ijs",
+    "item.tsm_betterpies.vanilla_ice_cream"           : "Vanille-ijs"
+}
