@@ -1,0 +1,19 @@
+{
+    "block.tsm_betterpies.blackberry_bush"            : "Karhunvatukat",
+    "block.tsm_betterpies.blueberry_bush"             : "Mustikoita",
+    "item.tsm_betterpies.cherries"                    : "Kirsikat",
+    "item.tsm_betterpies.apple_pie"                   : "Omenapiirakka",
+    "item.tsm_betterpies.blackberry_pie"              : "Karhunvatukka Piirakka",
+    "item.tsm_betterpies.blueberry_pie"               : "Mustikkapiirakka",
+    "item.tsm_betterpies.cheese"                      : "Juusto",
+    "item.tsm_betterpies.cheesecake"                  : "Juustokakku",
+    "item.tsm_betterpies.cherry_pie"                  : "Kirsikka Piirakka",
+    "item.tsm_betterpies.mud_pie"                     : "Mutapiirakka",
+    "item.tsm_betterpies.berry_pie"                   : "Makea Marjapiirakka",
+    "item.tsm_betterpies.berry_ice_cream"             : "Marja Jäätelö",
+    "item.tsm_betterpies.chocolate_ice_cream"         : "Suklaajäätelö",
+    "item.tsm_betterpies.cookies_and_cream_ice_cream" : "Evästeet Ja Kermajäätelö",
+    "item.tsm_betterpies.mint_chip_ice_cream"         : "Minttu Suklaahippujäätelö",
+    "item.tsm_betterpies.neapolitan_ice_cream"        : "Napolilainen Jäätelö",
+    "item.tsm_betterpies.vanilla_ice_cream"           : "Vaniljajäätelö"
+}
