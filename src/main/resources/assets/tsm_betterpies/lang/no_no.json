@@ -1,0 +1,19 @@
+{
+    "block.tsm_betterpies.blackberry_bush"            : "Bjørnebær",
+    "block.tsm_betterpies.blueberry_bush"             : "Blåbær",
+    "item.tsm_betterpies.cherries"                    : "Kirsebær",
+    "item.tsm_betterpies.apple_pie"                   : "Eplepai",
+    "item.tsm_betterpies.blackberry_pie"              : "Bjørnebærpai",
+    "item.tsm_betterpies.blueberry_pie"               : "Blåbærpai",
+    "item.tsm_betterpies.cheese"                      : "Ost",
+    "item.tsm_betterpies.cheesecake"                  : "Ostekake",
+    "item.tsm_betterpies.cherry_pie"                  : "Kirsebærpai",
+    "item.tsm_betterpies.mud_pie"                     : "Gjørme Pai",
+    "item.tsm_betterpies.berry_pie"                   : "Søt Bærpai",
+    "item.tsm_betterpies.berry_ice_cream"             : "Bær Iskrem",
+    "item.tsm_betterpies.chocolate_ice_cream"         : "Sjokolade Iskrem",
+    "item.tsm_betterpies.cookies_and_cream_ice_cream" : "Kaker og kremis",
+    "item.tsm_betterpies.mint_chip_ice_cream"         : "Mynte Sjokoladebiter Iskrem",
+    "item.tsm_betterpies.neapolitan_ice_cream"        : "Napolitansk Iskrem",
+    "item.tsm_betterpies.vanilla_ice_cream"           : "Vaniljeis"
+}
