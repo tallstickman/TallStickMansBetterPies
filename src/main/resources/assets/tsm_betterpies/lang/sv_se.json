@@ -1,0 +1,19 @@
+{
+    "block.tsm_betterpies.blackberry_bush"            : "Björnbär",
+    "block.tsm_betterpies.blueberry_bush"             : "Blåbär",
+    "item.tsm_betterpies.cherries"                    : "Körsbär",
+    "item.tsm_betterpies.apple_pie"                   : "Äppelpaj",
+    "item.tsm_betterpies.blackberry_pie"              : "Björnbärpaj",
+    "item.tsm_betterpies.blueberry_pie"               : "Blåbärspaj",
+    "item.tsm_betterpies.cheese"                      : "Ost",
+    "item.tsm_betterpies.cheesecake"                  : "Ostkaka",
+    "item.tsm_betterpies.cherry_pie"                  : "Körsbärspaj",
+    "item.tsm_betterpies.mud_pie"                     : "Lera Paj",
+    "item.tsm_betterpies.berry_pie"                   : "Söt Bärpaj",
+    "item.tsm_betterpies.berry_ice_cream"             : "Bär Glass",
+    "item.tsm_betterpies.chocolate_ice_cream"         : "Chokladglass",
+    "item.tsm_betterpies.cookies_and_cream_ice_cream" : "Kakor och gräddglass",
+    "item.tsm_betterpies.mint_chip_ice_cream"         : "Mintchokladglass",
+    "item.tsm_betterpies.neapolitan_ice_cream"        : "Napolitansk Glass",
+    "item.tsm_betterpies.vanilla_ice_cream"           : "Vaniljglass"
+}
