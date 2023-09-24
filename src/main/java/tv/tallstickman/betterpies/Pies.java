@@ -1,6 +1,7 @@
 package tv.tallstickman.betterpies;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -39,7 +40,7 @@ public class Pies {
 	public static final Item CHEESECAKE_ITEM = Registry.register(
 		Registries.ITEM,
 		new Identifier(Constants.MODID_STRING, Constants.ITEM_CHEESECAKE_STRING),
-		new DairyItem(new Item.Settings().maxCount(1).food(CHEESECAKE_FOOD_COMPONENT))
+		new DairyItem(new Item.Settings().food(CHEESECAKE_FOOD_COMPONENT))
 	);
 
 	public static void initialize()
@@ -54,5 +55,12 @@ public class Pies {
 			content.add(Pies.MUD_PIE_ITEM);
 			content.add(Pies.BERRY_PIE_ITEM);	// These are "Sweet Berry Pies," so we place them alphabetically after "Mud Pies."
 		});
+
+		// Register fruit pies as compostable.
+		CompostingChanceRegistry.INSTANCE.add(APPLE_PIE_ITEM, 1.0f);
+		CompostingChanceRegistry.INSTANCE.add(BERRY_PIE_ITEM, 1.0f);
+		CompostingChanceRegistry.INSTANCE.add(BLACKBERRY_PIE_ITEM, 1.0f);
+		CompostingChanceRegistry.INSTANCE.add(BLUEBERRY_PIE_ITEM, 1.0f);
+		CompostingChanceRegistry.INSTANCE.add(CHERRY_PIE_ITEM, 1.0f);
 	}
 }

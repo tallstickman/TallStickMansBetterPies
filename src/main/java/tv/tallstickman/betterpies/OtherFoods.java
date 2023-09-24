@@ -12,7 +12,7 @@ public class OtherFoods {
     
     // Cheese used for making Cheesecake
 	public static final FoodComponent CHEESE_FOOD_COMPONENT = (new FoodComponent.Builder()).hunger(4).saturationModifier(0.6F).build();
-	public static final Item CHEESE_ITEM = Registry.register(Registries.ITEM, new Identifier(Constants.MODID_STRING, Constants.ITEM_CHEESE_STRING), new DairyItem(new Item.Settings().maxCount(1).food(CHEESE_FOOD_COMPONENT)));
+	public static final Item CHEESE_ITEM = Registry.register(Registries.ITEM, new Identifier(Constants.MODID_STRING, Constants.ITEM_CHEESE_STRING), new DairyItem(new Item.Settings().food(CHEESE_FOOD_COMPONENT)));
 
 	public static void initialize()
 	{

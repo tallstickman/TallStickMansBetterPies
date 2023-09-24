@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -42,7 +43,7 @@ public class Fruits {
 	public static final Block BLUEBERRY_BUSH_BLOCK = new BlueberryBushBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_GREEN).ticksRandomly().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH).pistonBehavior(PistonBehavior.DESTROY).nonOpaque());
 	public static final FoodComponent BLUEBERRIES_FOOD_COMPONENT = (new FoodComponent.Builder()).hunger(2).saturationModifier(0.1F).build();
 	public static final Item BLUEBERRIES_ITEM = Registry.register(Registries.ITEM, new Identifier(Constants.MODID_STRING, Constants.ITEM_BLUEBERRIES_STRING), new BlockItem(BLUEBERRY_BUSH_BLOCK, new Item.Settings().food(BLUEBERRIES_FOOD_COMPONENT)));
-
+	
     // Cherries for cherry pie.
 	public static final FoodComponent CHERRIES_FOOD_COMPONENT = (new FoodComponent.Builder()).hunger(4).saturationModifier(0.3F).build();
 	public static final Item CHERRIES_ITEM = Registry.register(Registries.ITEM, new Identifier(Constants.MODID_STRING, Constants.ITEM_CHERRIES_STRING), new Item(new Item.Settings().food(CHERRIES_FOOD_COMPONENT)));
@@ -66,6 +67,12 @@ public class Fruits {
 		// Register new berry bush blocks.
 		Registry.register(Registries.BLOCK, new Identifier(Constants.MODID_STRING, Constants.BLOCK_BLUEBERRY_BUSH_STRING), Fruits.BLUEBERRY_BUSH_BLOCK);
 		Registry.register(Registries.BLOCK, new Identifier(Constants.MODID_STRING, Constants.BLOCK_BLACKBERRY_BUSH_STRING), Fruits.BLACKBERRY_BUSH_BLOCK);
+		
+		// Register new fruits as compostable.
+		CompostingChanceRegistry.INSTANCE.add(BLACKBERRIES_ITEM, 0.3f);
+		CompostingChanceRegistry.INSTANCE.add(BLUEBERRIES_ITEM, 0.3f);
+		CompostingChanceRegistry.INSTANCE.add(CHERRIES_ITEM, 0.3f);
+
 		// Create and register berry patch terrain Features
 		final List<RegistryKey<Biome>> BLUEBERRY_BIOMES = List.of(
 			BiomeKeys.WINDSWEPT_GRAVELLY_HILLS,

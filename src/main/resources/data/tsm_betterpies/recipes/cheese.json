@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "MM",
+        "MM"
+    ],
+    "key": {
+        "M": {"item": "minecraft:milk_bucket"}
+    },
+    "result": {
+        "item": "tsm_betterpies:cheese",
+        "count": 1
+    }
+}
