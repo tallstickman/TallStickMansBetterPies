@@ -3,7 +3,7 @@
 	"id": "tsm_betterpies",
 	"version": "${version}",
 	"name": "TallStickMan's Better Pies",
-	"description": "Why does pumpkin get all the glory!",
+	"description": "Why does pumpkin get all the glory! Now you can enjoy a variety of pies, and ice cream to go with them.",
 	"authors": [
 		"TallStickMan"
 	],
@@ -31,7 +31,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.14.21",
-		"minecraft": "~1.20.1",
+		"minecraft": ">=1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"
 	},
