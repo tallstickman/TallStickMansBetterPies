@@ -10,7 +10,7 @@ import net.minecraft.world.World;
 public class DairyItem
 extends Item{
 
-    public DairyItem(Settings settings) {
+    public DairyItem(net.minecraft.item.Item.Settings settings) {
         super(settings);
     }
     
