@@ -1,12 +1,12 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        { "item": "minecraft:cocoa_beans" },
+        { "item": "tsm_betterpies:cherries" },
         { "item": "minecraft:sugar" },
-        { "item": "minecraft:egg" }
+        { "item": "minecraft:wheat" }
     ],
     "result": {
-        "item": "tsm_betterpies:mud_pie",
+        "id": "tsm_betterpies:cherry_pie",
         "count": 1
     }
 }

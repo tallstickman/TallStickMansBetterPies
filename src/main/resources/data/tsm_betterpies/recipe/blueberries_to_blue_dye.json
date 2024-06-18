@@ -7,11 +7,11 @@
     ],
     "key": {
      "B": {
-        "item": "tsm_betterpies:blackberries"
+        "item": "tsm_betterpies:blueberries"
       }
     },
     "result": {
-      "item": "minecraft:black_dye",
+      "id": "minecraft:blue_dye",
       "count": 1
     }
   }

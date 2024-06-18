@@ -1,12 +1,12 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        { "item": "tsm_betterpies:blackberries" },
+        { "item": "minecraft:sweet_berries" },
         { "item": "minecraft:sugar" },
         { "item": "minecraft:wheat" }
     ],
     "result": {
-        "item": "tsm_betterpies:blackberry_pie",
+        "id": "tsm_betterpies:berry_pie",
         "count": 1
     }
 }
