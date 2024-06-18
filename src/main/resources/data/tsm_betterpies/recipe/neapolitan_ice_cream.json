@@ -6,7 +6,7 @@
         { "item": "tsm_betterpies:berry_ice_cream" }
     ],
     "result": {
-        "item": "tsm_betterpies:neapolitan_ice_cream",
+        "id": "tsm_betterpies:neapolitan_ice_cream",
         "count": 3
     }
 }

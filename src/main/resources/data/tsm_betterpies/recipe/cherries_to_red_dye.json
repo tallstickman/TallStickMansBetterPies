@@ -4,7 +4,7 @@
       { "item": "tsm_betterpies:cherries" }
   ],
   "result": {
-      "item": "minecraft:red_dye",
+      "id": "minecraft:red_dye",
       "count": 1
     }
   }
