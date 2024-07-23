@@ -9,7 +9,7 @@
         { "item": "minecraft:cocoa_beans"}
     ],
     "result": {
-        "id": "tsm_betterpies:mint_chip_ice_cream",
+        "item": "tsm_betterpies:mint_chip_ice_cream",
         "count": 1
     }
 }

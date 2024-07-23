@@ -8,6 +8,7 @@ import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -19,7 +20,7 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldView;
+import net.minecraft.world.BlockView;
 import net.minecraft.world.event.GameEvent;
 
 public class BlackberryBushBlock
@@ -32,7 +33,7 @@ extends SweetBerryBushBlock
     }
     
     @Override
-    public ItemStack getPickStack(WorldView world, BlockPos pos, BlockState state) {
+    public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
         return new ItemStack(Fruits.BLACKBERRIES_ITEM);
     }
 
@@ -56,13 +57,13 @@ extends SweetBerryBushBlock
             double d = Math.abs(entity.getX() - entity.lastRenderX);
             double e = Math.abs(entity.getZ() - entity.lastRenderZ);
             if (d >= (double)0.003f || e >= (double)0.003f) {
-                entity.damage(world.getDamageSources().sweetBerryBush(), 1.0f);
+                entity.damage(DamageSource.SWEET_BERRY_BUSH, 1.0F);
             }
         }
     }
 
     @Override
-    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
+    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         TallStickMansBetterPies.LOGGER.info("Used a blackberry bush!");
         boolean bl;
         int i = state.get(AGE);
@@ -79,7 +80,7 @@ extends SweetBerryBushBlock
             world.emitGameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Emitter.of(player, blockState));
             return ActionResult.success(world.isClient);
         }
-        return super.onUse(state, world, pos, player, hit);
+        return super.onUse(state, world, pos, player, hand, hit);
     }
 
 }

@@ -1,13 +1,11 @@
 {
     "block.tsm_betterpies.blackberry_bush"            : "Karhunvatukat",
     "block.tsm_betterpies.blueberry_bush"             : "Mustikoita",
-    "item.tsm_betterpies.cherries"                    : "Kirsikat",
     "item.tsm_betterpies.apple_pie"                   : "Omenapiirakka",
     "item.tsm_betterpies.blackberry_pie"              : "Karhunvatukka Piirakka",
     "item.tsm_betterpies.blueberry_pie"               : "Mustikkapiirakka",
     "item.tsm_betterpies.cheese"                      : "Juusto",
     "item.tsm_betterpies.cheesecake"                  : "Juustokakku",
-    "item.tsm_betterpies.cherry_pie"                  : "Kirsikka Piirakka",
     "item.tsm_betterpies.mud_pie"                     : "Mutapiirakka",
     "item.tsm_betterpies.berry_pie"                   : "Makea Marjapiirakka",
     "item.tsm_betterpies.berry_ice_cream"             : "Marja Jäätelö",

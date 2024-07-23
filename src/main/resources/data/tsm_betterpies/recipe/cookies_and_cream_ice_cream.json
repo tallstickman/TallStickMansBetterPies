@@ -8,7 +8,7 @@
         { "item": "minecraft:cookie"}
     ],
     "result": {
-        "id": "tsm_betterpies:cookies_and_cream_ice_cream",
+        "item": "tsm_betterpies:cookies_and_cream_ice_cream",
         "count": 1
     }
 }

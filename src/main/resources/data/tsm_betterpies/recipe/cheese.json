@@ -8,7 +8,7 @@
         "M": {"item": "minecraft:milk_bucket"}
     },
     "result": {
-        "id": "tsm_betterpies:cheese",
+        "item": "tsm_betterpies:cheese",
         "count": 1
     }
 }

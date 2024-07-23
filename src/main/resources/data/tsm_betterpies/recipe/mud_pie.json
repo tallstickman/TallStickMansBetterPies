@@ -6,7 +6,7 @@
         { "item": "minecraft:egg" }
     ],
     "result": {
-        "id": "tsm_betterpies:mud_pie",
+        "item": "tsm_betterpies:mud_pie",
         "count": 1
     }
 }

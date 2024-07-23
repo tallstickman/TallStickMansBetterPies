@@ -8,7 +8,7 @@
         { "item": "minecraft:cocoa_beans"}
     ],
     "result": {
-        "id": "tsm_betterpies:chocolate_ice_cream",
+        "item": "tsm_betterpies:chocolate_ice_cream",
         "count": 1
     }
 }

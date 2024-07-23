@@ -23,7 +23,6 @@ public class Constants {
     public static final String ITEM_BERRY_PIE_STRING      = "berry_pie";
     public static final String ITEM_BLACKBERRY_PIE_STRING = "blackberry_pie";
     public static final String ITEM_BLUEBERRY_PIE_STRING  = "blueberry_pie";
-    public static final String ITEM_CHERRY_PIE_STRING     = "cherry_pie";
     public static final String ITEM_MUD_PIE_STRING        = "mud_pie";
     public static final String ITEM_CHEESECAKE_STRING     = "cheesecake";
     //   Other Food Names

@@ -1,13 +1,11 @@
 {
     "block.tsm_betterpies.blackberry_bush"            : "More",
     "block.tsm_betterpies.blueberry_bush"             : "Mirtilli",
-    "item.tsm_betterpies.cherries"                    : "Ciliegie",
     "item.tsm_betterpies.apple_pie"                   : "Torta di Mele",
     "item.tsm_betterpies.blackberry_pie"              : "Torta di More",
     "item.tsm_betterpies.blueberry_pie"               : "Torta di Mirtilli",
     "item.tsm_betterpies.cheese"                      : "Formaggio",
     "item.tsm_betterpies.cheesecake"                  : "Cheesecake",
-    "item.tsm_betterpies.cherry_pie"                  : "Torta di Ciliegie",
     "item.tsm_betterpies.mud_pie"                     : "Torta di Fango",
     "item.tsm_betterpies.berry_pie"                   : "Torta di Bacche Dolci",
     "item.tsm_betterpies.berry_ice_cream"             : "Gelato ai Frutti di Bosco",

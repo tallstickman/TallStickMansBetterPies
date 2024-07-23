@@ -6,7 +6,7 @@
         { "item": "minecraft:wheat" }
     ],
     "result": {
-        "id": "tsm_betterpies:apple_pie",
+        "item": "tsm_betterpies:apple_pie",
         "count": 1
     }
 }
