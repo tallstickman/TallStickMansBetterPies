@@ -5,7 +5,7 @@ import java.util.List;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -53,7 +53,7 @@ public class Fruits {
 	{
 		// Add cherry drops to the Minecraft Cherry Blossom Leaves block.
 		final RegistryKey<LootTable> CHERRY_LEAVES_LOOT_TABLE_ID = Blocks.CHERRY_LEAVES.getLootTableKey();
-		LootTableEvents.MODIFY.register((id, tableBuilder, source) -> {
+		LootTableEvents.MODIFY.register((id, tableBuilder, source, wrapper) -> {
 			if (source.isBuiltin() && CHERRY_LEAVES_LOOT_TABLE_ID.equals(id)) {
 				LootPool.Builder poolBuilder = LootPool.builder()
 				.rolls(UniformLootNumberProvider.create(1, 3))

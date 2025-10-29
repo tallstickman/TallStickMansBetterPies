@@ -10,11 +10,9 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
@@ -56,7 +54,7 @@ extends SweetBerryBushBlock
             double d = Math.abs(entity.getX() - entity.lastRenderX);
             double e = Math.abs(entity.getZ() - entity.lastRenderZ);
             if (d >= (double)0.003f || e >= (double)0.003f) {
-                entity.damage(world.getDamageSources().sweetBerryBush(), 1.0f);
+                entity.damage(world.getDamageSources().sweetBerryBush(), 1.0F);
             }
         }
     }
@@ -67,9 +65,9 @@ extends SweetBerryBushBlock
         boolean bl;
         int i = state.get(AGE);
         bl = i == 3;
-        if (!bl && player.getStackInHand(Hand.MAIN_HAND).isOf(Items.BONE_MEAL)) {
-            return ActionResult.PASS;
-        }
+        // if (!bl && player.getStackInHand(hand).isOf(Items.BONE_MEAL)) {
+        //     return ActionResult.PASS;
+        // }
         if (i > 1) {
             int j = 1 + world.random.nextInt(2);
             SweetBerryBushBlock.dropStack(world, pos, new ItemStack(Fruits.BLACKBERRIES_ITEM, j + (bl ? 1 : 0)));
