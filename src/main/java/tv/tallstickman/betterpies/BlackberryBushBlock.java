@@ -50,14 +50,13 @@ public class BlackberryBushBlock
             return;
         }
         entity.slowMovement(state, new Vec3d(0.8f, 0.75, 0.8f));
-        ServerWorld serverWorld = (ServerWorld) world;
-        if ((Integer) state.get(AGE) != 0) {
+        if (world instanceof ServerWorld serverWorld && (Integer) state.get(AGE) != 0) {
             Vec3d vec3d = entity.isControlledByPlayer() ? entity.getMovement()
                     : entity.getLastRenderPos().subtract(entity.getPos());
             if (vec3d.horizontalLengthSquared() > 0.0) {
                 double d = Math.abs(vec3d.getX());
                 double e = Math.abs(vec3d.getZ());
-                if (d >= 0.003000000026077032 || e >= 0.003000000026077032) {
+                if (d >= 0.003F || e >= 0.003F) {
                     entity.damage(serverWorld, world.getDamageSources().sweetBerryBush(), 1.0F);
                 }
             }
