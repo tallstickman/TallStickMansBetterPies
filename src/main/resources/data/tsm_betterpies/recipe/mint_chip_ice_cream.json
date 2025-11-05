@@ -1,12 +1,12 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        { "item": "minecraft:ice" },
-        { "item": "minecraft:sugar" },
-        { "item": "minecraft:milk_bucket" },
-        { "item": "minecraft:egg" },
-        { "item": "minecraft:green_dye"},
-        { "item": "minecraft:cocoa_beans"}
+        "minecraft:ice",
+        "minecraft:sugar",
+        "minecraft:milk_bucket",
+        "minecraft:egg",
+        "minecraft:green_dye",
+        "minecraft:cocoa_beans"
     ],
     "result": {
         "id": "tsm_betterpies:mint_chip_ice_cream",

@@ -1,11 +1,11 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        { "item": "minecraft:ice" },
-        { "item": "minecraft:sugar" },
-        { "item": "minecraft:milk_bucket" },
-        { "item": "minecraft:egg" },
-        { "item": "minecraft:sweet_berries"}
+        "minecraft:ice",
+        "minecraft:sugar",
+        "minecraft:milk_bucket",
+        "minecraft:egg",
+        "minecraft:sweet_berries"
     ],
     "result": {
         "id": "tsm_betterpies:berry_ice_cream",

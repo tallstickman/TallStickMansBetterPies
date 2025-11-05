@@ -5,7 +5,7 @@
         "MM"
     ],
     "key": {
-        "M": {"item": "minecraft:milk_bucket"}
+        "M": "minecraft:milk_bucket"
     },
     "result": {
         "id": "tsm_betterpies:cheese",

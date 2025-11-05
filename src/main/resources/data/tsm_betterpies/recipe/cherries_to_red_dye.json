@@ -1,7 +1,7 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-      { "item": "tsm_betterpies:cherries" }
+      "tsm_betterpies:cherries"
   ],
   "result": {
       "id": "minecraft:red_dye",
