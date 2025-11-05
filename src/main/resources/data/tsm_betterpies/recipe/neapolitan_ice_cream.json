@@ -1,9 +1,9 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        { "item": "tsm_betterpies:vanilla_ice_cream" },
-        { "item": "tsm_betterpies:chocolate_ice_cream" },
-        { "item": "tsm_betterpies:berry_ice_cream" }
+        "tsm_betterpies:vanilla_ice_cream",
+        "tsm_betterpies:chocolate_ice_cream",
+        "tsm_betterpies:berry_ice_cream"
     ],
     "result": {
         "id": "tsm_betterpies:neapolitan_ice_cream",

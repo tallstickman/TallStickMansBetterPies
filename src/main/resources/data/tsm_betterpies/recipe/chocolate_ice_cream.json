@@ -1,11 +1,11 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        { "item": "minecraft:ice" },
-        { "item": "minecraft:sugar" },
-        { "item": "minecraft:milk_bucket" },
-        { "item": "minecraft:egg" },
-        { "item": "minecraft:cocoa_beans"}
+        "minecraft:ice",
+        "minecraft:sugar",
+        "minecraft:milk_bucket",
+        "minecraft:egg",
+        "minecraft:cocoa_beans"
     ],
     "result": {
         "id": "tsm_betterpies:chocolate_ice_cream",

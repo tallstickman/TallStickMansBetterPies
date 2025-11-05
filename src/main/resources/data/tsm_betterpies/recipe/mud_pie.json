@@ -1,9 +1,9 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        { "item": "minecraft:cocoa_beans" },
-        { "item": "minecraft:sugar" },
-        { "item": "minecraft:egg" }
+        "minecraft:cocoa_beans",
+        "minecraft:sugar",
+        "minecraft:egg"
     ],
     "result": {
         "id": "tsm_betterpies:mud_pie",
