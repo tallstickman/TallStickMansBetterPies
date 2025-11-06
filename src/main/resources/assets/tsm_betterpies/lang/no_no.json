@@ -1,6 +1,8 @@
 {
     "block.tsm_betterpies.blackberry_bush"            : "Bjørnebær",
     "block.tsm_betterpies.blueberry_bush"             : "Blåbær",
+    "block.tsm_betterpies.blackberries"               : "Bjørnebær",
+    "block.tsm_betterpies.blueberries"                : "Blåbær",
     "item.tsm_betterpies.cherries"                    : "Kirsebær",
     "item.tsm_betterpies.apple_pie"                   : "Eplepai",
     "item.tsm_betterpies.blackberry_pie"              : "Bjørnebærpai",

@@ -1,6 +1,8 @@
 {
     "block.tsm_betterpies.blackberry_bush"            : "Blackberries",
     "block.tsm_betterpies.blueberry_bush"             : "Bloob Berries",
+    "block.tsm_betterpies.blackberries"               : "Blackberries",
+    "block.tsm_betterpies.blueberries"                : "Bloob Berries",
     "item.tsm_betterpies.cherries"                    : "Cherries",
     "item.tsm_betterpies.apple_pie"                   : "Apple Pie",
     "item.tsm_betterpies.blackberry_pie"              : "Blackberry Pie",

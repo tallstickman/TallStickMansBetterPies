@@ -1,6 +1,8 @@
 {
     "block.tsm_betterpies.blackberry_bush"            : "Moras",
     "block.tsm_betterpies.blueberry_bush"             : "Arándanos",
+    "block.tsm_betterpies.blackberries"               : "Moras",
+    "block.tsm_betterpies.blueberries"                : "Arándanos",
     "item.tsm_betterpies.cherries"                    : "Cerezas",
     "item.tsm_betterpies.apple_pie"                   : "Tarta de Manzana",
     "item.tsm_betterpies.blackberry_pie"              : "Pastel de Moras",

@@ -1,6 +1,8 @@
 {
     "block.tsm_betterpies.blackberry_bush"            : "Jeżyny",
     "block.tsm_betterpies.blueberry_bush"             : "Jagody",
+    "block.tsm_betterpies.blackberries"               : "Jeżyny",
+    "block.tsm_betterpies.blueberries"                : "Jagody",
     "item.tsm_betterpies.cherries"                    : "Wiśnie",
     "item.tsm_betterpies.apple_pie"                   : "Jabłecznik",
     "item.tsm_betterpies.blackberry_pie"              : "Ciasto Jeżynowe",

@@ -1,6 +1,8 @@
 {
     "block.tsm_betterpies.blackberry_bush"            : "Mûres",
     "block.tsm_betterpies.blueberry_bush"             : "Bleuets",
+    "block.tsm_betterpies.blackberries"               : "Mûres",
+    "block.tsm_betterpies.blueberries"                : "Bleuets",
     "item.tsm_betterpies.cherries"                    : "Cerises",
     "item.tsm_betterpies.apple_pie"                   : "Tarte Aux Pommes",
     "item.tsm_betterpies.blackberry_pie"              : "Tarte Aux Mûres",

@@ -1,6 +1,8 @@
 {
     "block.tsm_betterpies.blackberry_bush"            : "More",
     "block.tsm_betterpies.blueberry_bush"             : "Mirtilli",
+    "block.tsm_betterpies.blackberries"               : "More",
+    "block.tsm_betterpies.blueberries"                : "Mirtilli",
     "item.tsm_betterpies.cherries"                    : "Ciliegie",
     "item.tsm_betterpies.apple_pie"                   : "Torta di Mele",
     "item.tsm_betterpies.blackberry_pie"              : "Torta di More",
