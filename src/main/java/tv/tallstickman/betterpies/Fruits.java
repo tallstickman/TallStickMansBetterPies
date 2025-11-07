@@ -77,32 +77,58 @@ public class Fruits {
 
 	// Cherries for cherry pie.
 	public static final FoodComponent CHERRIES_FOOD_COMPONENT = (new FoodComponent.Builder())
-			.nutrition(4)
-			.saturationModifier(0.3F)
+			.nutrition(3)
+			.saturationModifier(0.2F)
 			.build();
 	public static final Item CHERRIES_ITEM = TallStickMansBetterPies.registerItem(
 			Constants.ITEM_CHERRIES_STRING,
 			Item::new,
 			new Item.Settings().food(CHERRIES_FOOD_COMPONENT));
 
+	// Peaches for peach pie.
+	public static final FoodComponent PALE_PEACHES_FOOD_COMPONENT = (new FoodComponent.Builder())
+			.nutrition(4)
+			.saturationModifier(0.3F)
+			.build();
+	public static final Item PALE_PEACHES_ITEM = TallStickMansBetterPies.registerItem(
+			Constants.ITEM_PALE_PEACHES_STRING,
+			Item::new,
+			new Item.Settings().food(PALE_PEACHES_FOOD_COMPONENT));
+			
 	public static void initialize() {
-		// Add cherry drops to the Minecraft Cherry Blossom Leaves block.
+		// Add cherry drops to the Minecraft Cherry Blossom Leaves block,
+		// and peach drops to the Pale Oak Leaves block.
 		final Optional<RegistryKey<LootTable>> CHERRY_LEAVES_LOOT_TABLE_ID = Blocks.CHERRY_LEAVES.getLootTableKey();
+		final Optional<RegistryKey<LootTable>> PALE_OAK_LEAVES_LOOT_TABLE_ID = Blocks.PALE_OAK_LEAVES.getLootTableKey();
+		// register event handler for modifying loot tables
 		LootTableEvents.MODIFY.register((id, tableBuilder, source, wrapper) -> {
+			// Add cherry drops to cherry leaves
 			if (source.isBuiltin() && CHERRY_LEAVES_LOOT_TABLE_ID.isPresent()
 					&& CHERRY_LEAVES_LOOT_TABLE_ID.get().equals(id)) {
 				LootPool.Builder poolBuilder = LootPool.builder()
 						.rolls(UniformLootNumberProvider.create(1, 3))
-						.conditionally(RandomChanceLootCondition.builder(0.05F))
+						.conditionally(RandomChanceLootCondition.builder(0.04F))
 						.with(ItemEntry.builder(Fruits.CHERRIES_ITEM));
 
-				tableBuilder.pool(poolBuilder.build());}
+				tableBuilder.pool(poolBuilder.build());
+			}
+			// Add peach drops to pale oak leaves
+			if (source.isBuiltin() && PALE_OAK_LEAVES_LOOT_TABLE_ID.isPresent()
+					&& PALE_OAK_LEAVES_LOOT_TABLE_ID.get().equals(id)) {
+				LootPool.Builder poolBuilder = LootPool.builder()
+						.rolls(UniformLootNumberProvider.create(1, 1))
+						.conditionally(RandomChanceLootCondition.builder(0.02F))
+						.with(ItemEntry.builder(Fruits.PALE_PEACHES_ITEM));
+
+				tableBuilder.pool(poolBuilder.build());
+			}
 		});
 
 		// Register new fruits as compostable.
 		CompostingChanceRegistry.INSTANCE.add(BLACKBERRIES_ITEM, 0.3f);
 		CompostingChanceRegistry.INSTANCE.add(BLUEBERRIES_ITEM, 0.3f);
 		CompostingChanceRegistry.INSTANCE.add(CHERRIES_ITEM, 0.3f);
+		CompostingChanceRegistry.INSTANCE.add(PALE_PEACHES_ITEM, 0.3f);
 
 		// Create and register berry patch terrain Features
 		final List<RegistryKey<Biome>> BLUEBERRY_BIOMES = List.of(
@@ -136,6 +162,7 @@ public class Fruits {
 			content.add(Fruits.BLACKBERRIES_ITEM);
 			content.add(Fruits.BLUEBERRIES_ITEM);
 			content.add(Fruits.CHERRIES_ITEM);
+			content.add(Fruits.PALE_PEACHES_ITEM);
 		});
 
 	}

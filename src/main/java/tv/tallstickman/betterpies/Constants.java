@@ -11,6 +11,7 @@ public class Constants {
     public static final String ITEM_BLACKBERRIES_STRING = "blackberries";
     public static final String ITEM_BLUEBERRIES_STRING  = "blueberries";
     public static final String ITEM_CHERRIES_STRING     = "cherries";
+    public static final String ITEM_PALE_PEACHES_STRING = "pale_peach";
     //   Ice Cream
     public static final String ITEM_VANILLA_ICE_CREAM_STRING           = "vanilla_ice_cream";
     public static final String ITEM_BERRY_ICE_CREAM_STRING             = "berry_ice_cream";
@@ -25,6 +26,7 @@ public class Constants {
     public static final String ITEM_BLUEBERRY_PIE_STRING  = "blueberry_pie";
     public static final String ITEM_CHERRY_PIE_STRING     = "cherry_pie";
     public static final String ITEM_MUD_PIE_STRING        = "mud_pie";
+    public static final String ITEM_PEACH_PIE_STRING      = "peach_pie";
     public static final String ITEM_CHEESECAKE_STRING     = "cheesecake";
     //   Other Food Names
     public static final String ITEM_CHEESE_STRING = "cheese";

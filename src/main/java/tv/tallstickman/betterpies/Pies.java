@@ -68,15 +68,25 @@ public class Pies {
 			Item::new,
 			new Item.Settings().food(MUD_PIE_FOOD_COMPONENT));
 
+	// Peach Pie!
+	public static final FoodComponent PEACH_PIE_FOOD_COMPONENT = (new FoodComponent.Builder())
+			.nutrition(8)
+			.saturationModifier(0.3F)
+			.build();
+	public static final Item PEACH_PIE_ITEM = TallStickMansBetterPies.registerItem(
+			Constants.ITEM_PEACH_PIE_STRING,
+			Item::new,
+			new Item.Settings().food(PEACH_PIE_FOOD_COMPONENT));
+
 	// Cheesecake!
 	public static final FoodComponent CHEESECAKE_FOOD_COMPONENT = (new FoodComponent.Builder())
-	.nutrition(8)
+			.nutrition(8)
 			.saturationModifier(0.3F)
 			.build();
 	public static final Item CHEESECAKE_ITEM = TallStickMansBetterPies.registerItem(
-		Constants.ITEM_CHEESECAKE_STRING,
-		DairyItem::new,
-		new Item.Settings().food(CHEESECAKE_FOOD_COMPONENT));
+			Constants.ITEM_CHEESECAKE_STRING,
+			DairyItem::new,
+			new Item.Settings().food(CHEESECAKE_FOOD_COMPONENT));
 
 	public static void initialize() {
 		// Add food items to the "Food and Drink" Item Group
@@ -87,8 +97,9 @@ public class Pies {
 			content.add(Pies.CHEESECAKE_ITEM);
 			content.add(Pies.CHERRY_PIE_ITEM);
 			content.add(Pies.MUD_PIE_ITEM);
+			content.add(Pies.PEACH_PIE_ITEM);
 			content.add(Pies.BERRY_PIE_ITEM); // These are "Sweet Berry Pies," so we place them alphabetically after
-											  // "Mud Pies."
+												// "Mud Pies."
 		});
 
 		// Register fruit pies as compostable.
@@ -97,5 +108,6 @@ public class Pies {
 		CompostingChanceRegistry.INSTANCE.add(BLACKBERRY_PIE_ITEM, 1.0f);
 		CompostingChanceRegistry.INSTANCE.add(BLUEBERRY_PIE_ITEM, 1.0f);
 		CompostingChanceRegistry.INSTANCE.add(CHERRY_PIE_ITEM, 1.0f);
+		CompostingChanceRegistry.INSTANCE.add(PEACH_PIE_ITEM, 1.0f);
 	}
 }

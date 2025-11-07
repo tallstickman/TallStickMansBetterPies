@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "tsm_betterpies:pale_peach",
+        "minecraft:sugar",
+        "minecraft:wheat"
+    ],
+    "result": {
+        "id": "tsm_betterpies:peach_pie",
+        "count": 1
+    }
+}
