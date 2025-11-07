@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "get_blueberries": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "tsm_betterpies:blueberries"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "get_blueberries"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "tsm_betterpies:blueberry_pie",
+            "tsm_betterpies:blueberries_to_blue_dye"
+        ]
+    }
+}

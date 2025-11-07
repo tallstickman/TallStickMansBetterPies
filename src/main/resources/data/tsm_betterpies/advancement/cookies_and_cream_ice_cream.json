@@ -1,0 +1,37 @@
+{
+    "criteria": {
+        "sweet_treat": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "tsm_betterpies:vanilla_ice_cream"
+                    }
+                ]
+            }
+        },
+        "there_be_elves": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:cookie"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "sweet_treat"
+        ],
+        [
+            "there_be_elves"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "tsm_betterpies:cookies_and_cream_ice_cream"
+        ]
+    }
+}

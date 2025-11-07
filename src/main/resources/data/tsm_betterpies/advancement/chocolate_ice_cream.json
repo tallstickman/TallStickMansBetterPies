@@ -1,0 +1,37 @@
+{
+    "criteria": {
+        "sweet_treat": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "tsm_betterpies:vanilla_ice_cream"
+                    }
+                ]
+            }
+        },
+        "magic_beans": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:cocoa_beans"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "sweet_treat"
+        ],
+        [
+            "magic_beans"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "tsm_betterpies:chocolate_ice_cream"
+        ]
+    }
+}

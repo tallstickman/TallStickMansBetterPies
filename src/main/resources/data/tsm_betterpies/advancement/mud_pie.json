@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "magic_beans": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:cocoa_beans"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "magic_beans"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "tsm_betterpies:mud_pie"
+        ]
+    }
+}

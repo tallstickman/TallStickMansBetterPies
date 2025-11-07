@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "get_cherries": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "tsm_betterpies:cherries"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "get_cherries"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "tsm_betterpies:cherry_pie",
+            "tsm_betterpies:cherries_to_red_dye"
+        ]
+    }
+}

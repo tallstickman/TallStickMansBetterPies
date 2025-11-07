@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "keep_the_doctor_away": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:apple"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "keep_the_doctor_away"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "tsm_betterpies:apple_pie"
+        ]
+    }
+}

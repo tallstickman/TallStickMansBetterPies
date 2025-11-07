@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "get_blackberries": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "tsm_betterpies:blackberries"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "get_blackberries"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "tsm_betterpies:blackberry_pie",
+            "tsm_betterpies:blackberries_to_black_dye"
+        ]
+    }
+}

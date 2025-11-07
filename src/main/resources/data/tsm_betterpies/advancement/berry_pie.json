@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "prickly_business": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:sweet_berries"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "prickly_business"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "tsm_betterpies:berry_pie"
+        ]
+    }
+}

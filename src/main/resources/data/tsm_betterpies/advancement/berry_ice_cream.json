@@ -1,0 +1,37 @@
+{
+    "criteria": {
+        "sweet_treat": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "tsm_betterpies:vanilla_ice_cream"
+                    }
+                ]
+            }
+        },
+        "prickly_business": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:sweet_berries"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "sweet_treat"
+        ],
+        [
+            "prickly_business"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "tsm_betterpies:berry_ice_cream"
+        ]
+    }
+}

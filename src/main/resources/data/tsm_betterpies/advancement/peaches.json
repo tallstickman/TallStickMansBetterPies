@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "get_peach": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "tsm_betterpies:pale_peach"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "get_peach"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "tsm_betterpies:peach_pie",
+            "tsm_betterpies:peaches_to_yellow_dye"
+        ]
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "criteria": {
+        "sweet_treat": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "tsm_betterpies:vanilla_ice_cream"
+                    }
+                ]
+            }
+        },
+        "chocolaty_goodness": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "tsm_betterpies:chocolate_ice_cream"
+                    }
+                ]
+            }
+        },
+        "berry_good": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "tsm_betterpies:berry_ice_cream"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "sweet_treat"
+        ],
+        [
+            "chocolaty_goodness"
+        ],
+        [
+            "berry_good"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "tsm_betterpies:neapolitan_ice_cream"
+        ]
+    }
+}

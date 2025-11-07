@@ -1,0 +1,37 @@
+{
+    "criteria": {
+        "sweet_treat": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "tsm_betterpies:vanilla_ice_cream"
+                    }
+                ]
+            }
+        },
+        "minty_fresh": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:green_dye"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "sweet_treat"
+        ],
+        [
+            "minty_fresh"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "tsm_betterpies:mint_chip_ice_cream"
+        ]
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "criteria": {
+        "get_ice": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:ice"
+                    }
+                ]
+            }
+        },
+        "got_milk": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:milk_bucket"
+                    }
+                ]
+            }
+        },
+        "get_eggs": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:egg"
+                    }
+                ]
+            }
+        },
+        "something_sweet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:sugar"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "something_sweet"
+        ],
+        [
+            "get_eggs"
+        ],
+        [
+            "get_ice"
+        ],
+        [
+            "got_milk"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "tsm_betterpies:vanilla_ice_cream"
+        ]
+    }
+}
