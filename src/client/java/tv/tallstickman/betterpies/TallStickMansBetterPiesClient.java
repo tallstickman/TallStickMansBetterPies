@@ -1,8 +1,8 @@
 package tv.tallstickman.betterpies;
 
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
-import net.minecraft.client.render.RenderLayer;
+import net.fabricmc.fabric.api.client.rendering.v1.BlockRenderLayerMap;
+import net.minecraft.client.render.BlockRenderLayer;
 
 public class TallStickMansBetterPiesClient implements ClientModInitializer {
 
@@ -10,7 +10,7 @@ public class TallStickMansBetterPiesClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 		// Make it so the transparency in the texture is rendered as clear, not black.
-		BlockRenderLayerMap.INSTANCE.putBlock(Fruits.BLUEBERRY_BUSH_BLOCK, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(Fruits.BLACKBERRY_BUSH_BLOCK, RenderLayer.getCutout());
+		BlockRenderLayerMap.putBlock(Fruits.BLUEBERRY_BUSH_BLOCK, BlockRenderLayer.CUTOUT);
+		BlockRenderLayerMap.putBlock(Fruits.BLACKBERRY_BUSH_BLOCK, BlockRenderLayer.CUTOUT);
 	}
 }
