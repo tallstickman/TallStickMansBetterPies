@@ -1,0 +1,66 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tsm_betterpies:blueberries",
+          "conditions": []
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tsm_betterpies:blueberries",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "tsm_betterpies:blueberry_bush",
+              "properties": {
+                "age": "3"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 0,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tsm_betterpies:blueberries",
+          "conditions": [
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "tsm_betterpies:blueberry_bush",
+                  "properties": {
+                    "age": "2"
+                  }
+                },
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "tsm_betterpies:blueberry_bush",
+                  "properties": {
+                    "age": "3"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
