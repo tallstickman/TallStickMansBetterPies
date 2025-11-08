@@ -64,7 +64,7 @@ public class TallStickMansBetterPies implements ModInitializer {
 			// can be the same.
 			RegistryKey<Item> itemKey = keyOfItem(itemName);
 
-			BlockItem blockItem = new BlockItem(block, new Item.Settings().registryKey(itemKey));
+			BlockItem blockItem = new BlockItem(block, settings.registryKey(itemKey));
 			return Registry.register(Registries.ITEM, itemKey, blockItem);
 	}
 
