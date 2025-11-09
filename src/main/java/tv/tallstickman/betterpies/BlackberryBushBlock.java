@@ -46,7 +46,7 @@ public class BlackberryBushBlock
             EntityType.SHEEP);
 
     @Override
-    public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity, EntityCollisionHandler handler) {
+    public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity, EntityCollisionHandler handler, boolean whatsThisFor) {
         if (!(entity instanceof LivingEntity) || IMMUNE_ENTITY_TYPES.contains(entity.getType())) {
             return;
         }
